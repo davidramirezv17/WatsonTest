@@ -1,0 +1,10 @@
+<mat-card>
+  <div class="example-container">
+    <mat-form-field>
+      <textarea class="heighted" disabled matInput>{{textVal}}</textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="inputText" placeholder="Write Message To BOT" (keydown.enter)="sendMessage()">
+    </mat-form-field>
+  </div>
+</mat-card>
